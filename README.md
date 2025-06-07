@@ -87,7 +87,3 @@
 
 - [x] **Comunicador Web**
   - Textos claros, simples, sin errores. Vocabulario accesible. Descripciones pensadas para el visitante del parque.
-
-## ✅ Estado Final: Listo para entregar
-
-¡Solo falta completar y subir el video explicativo para cumplir con el 100% de los requisitos!
