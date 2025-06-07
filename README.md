@@ -46,8 +46,8 @@
 - [x] **Heurísticas de usabilidad y Gestalt**
   - Consistencia visual, agrupación, contraste, jerarquía visual, navegación clara.
 
-- [x] **Accesibilidad y Lighthouse +75%**
-  - Se revisó el contraste, semántica y estructura. Lighthouse supera el umbral en un muestreo de las secciones.
+- [x] **Accesibilidad
+  - Se revisó el contraste, semántica y estructura.
 
 - [x] **Interacciones en JavaScript**
   - Menú móvil dinámico, animación de confetti, redirección automática.
