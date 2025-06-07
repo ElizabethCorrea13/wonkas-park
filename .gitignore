@@ -1,0 +1,20 @@
+# Node modules
+node_modules/
+
+# Output de Tailwind
+dist/output.css
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Sistema operativo (Windows/macOS)
+.DS_Store
+Thumbs.db
+
+# IDEs y editores
+.vscode/
+.idea/
+
+# Entorno
+.env
