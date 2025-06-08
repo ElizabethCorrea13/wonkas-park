@@ -7,45 +7,28 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/app.css" />
+  <style>
+    #start-purchase{
+        font-family: 'Lilita One';
+        font-weight: 300;
+    }
+  </style>
 </head>
 <body class="bg-[#fff5dd] text-gray-800">
   <wonkas-header></wonkas-header>
   <wonkas-hero title="Entradas"></wonkas-hero>
-  <!-- Formulario -->
-  <!-- <main class="flex-1 flex justify-center items-center py-12 bg-beige-100">
-    <form class="bg-white shadow-lg rounded p-8 w-full max-w-md space-y-6">
-      <div>
-        <label class="block text-gray-700">Nombre Completo</label>
-        <input type="text" placeholder="Pablo" class="mt-1 block w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-purple-400" />
-      </div>
-      <div>
-        <label class="block text-gray-700">Cantidad de entradas</label>
-        <input type="number" class="mt-1 block w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-purple-400" />
-      </div>
-      <div>
-        <label class="block text-gray-700">Promociones</label>
-        <select class="mt-1 block w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-purple-400">
-          <option>Seleccionar</option>
-          <option>Promo 2x1</option>
-          <option>Descuento 20%</option>
-        </select>
-      </div>
-      <div>
-        <label class="block text-gray-700">Label</label>
-        <input type="date" class="mt-1 block w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-purple-400" />
-      </div>
-      <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white font-bold w-full py-2 rounded">
-        Comprar
-      </button>
-    </form>
-  </main> -->
-  <!-- CONTENIDO: Entradas -->
-  <main class="text-center bg-[#fff5dd]">
-    <h2 class="text-3xl titulo text-purple-800 mb-6">Entradas</h2>
+
+  <!-- Pantalla 1: Info y botón -->
+  <section id="info-section" class="text-center bg-[#fff5dd]">
     <p class="text-lg mb-6 max-w-xl mx-auto">
       Comprá tus entradas de forma fácil y segura desde cualquier dispositivo. Elegí tu fecha, aplicá promociones y ¡disfrutá el parque!
     </p>
-    <a href="comprar.html" class="bg-yellow-400 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-orange-500 transition duration-200 inline-block">🎟️ Comprar Entradas</a>
+    <button id="start-purchase" class="flex bg-[#FFA101] text-white px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition duration-200 items-center gap-2 mx-auto">
+      <svg class="icon" viewBox="0 0 33 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.1923 2.61111V3.72222M23.1923 8.16667V9.27778M23.1923 13.7222V14.8333M23.1923 19.2778V20.3889M9.80769 12.6111H17.6154M9.80769 15.9444H14.2692M3.67308 1.5C2.74954 1.5 2 2.24667 2 3.16667V7.64963C2.67926 8.03922 3.24347 8.60026 3.63578 9.27622C4.02808 9.95218 4.23464 10.7192 4.23464 11.5C4.23464 12.2808 4.02808 13.0478 3.63578 13.7238C3.24347 14.3997 2.67926 14.9608 2 15.3504V19.8333C2 20.7533 2.74954 21.5 3.67308 21.5H29.3269C30.2505 21.5 31 20.7533 31 19.8333V15.3504C30.3207 14.9608 29.7565 14.3997 29.3642 13.7238C28.9719 13.0478 28.7654 12.2808 28.7654 11.5C28.7654 10.7192 28.9719 9.95218 29.3642 9.27622C29.7565 8.60026 30.3207 8.03922 31 7.64963V3.16667C31 2.24667 30.2505 1.5 29.3269 1.5H3.67308Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        <span>COMPRAR ENTRADAS</span>
+    </button>
     <div class="mt-10 text-left max-w-2xl mx-auto bg-white shadow-md rounded-lg p-6">
       <h3 class="text-xl font-semibold text-purple-700 mb-4">Promociones disponibles</h3>
       <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
@@ -55,10 +38,58 @@
       </ul>
       <p class="mt-4 text-xs text-gray-500">Aceptamos tarjetas de crédito, débito y billeteras virtuales. Transacciones 100% seguras.</p>
     </div>
-  </main>
+  </section>
+
+  <!-- Pantalla 2: Formulario -->
+<section id="form-section" class="hidden flex justify-center items-center py-12 bg-[#fff5dd]">
+  <form id="purchase-form" class="bg-white shadow-lg rounded p-8 w-full max-w-md space-y-6">
+    <div>
+      <label class="block text-gray-700">Nombre Completo</label>
+      <input id="name" type="text" placeholder="Pablo" class="mt-1 block w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-[#6635AA]" />
+      <p id="error-name" class="text-red-500 text-sm hidden">* Ingresá tu nombre</p>
+    </div>
+    <div>
+      <label class="block text-gray-700">Cantidad de entradas</label>
+      <input id="quantity" type="number" min="1" class="mt-1 block w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-[#6635AA]" />
+      <p id="error-quantity" class="text-red-500 text-sm hidden">* Ingresá una cantidad válida</p>
+    </div>
+    <div>
+      <label class="block text-gray-700">Promociones</label>
+      <select id="promotion" class="mt-1 block w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-[#6635AA]">
+        <option value="">Seleccionar</option>
+        <option>Promo 2x1</option>
+        <option>Descuento 20%</option>
+      </select>
+      <!-- Este error ya no se usa pero lo dejo por si querés después volver -->
+      <p id="error-promotion" class="text-red-500 text-sm hidden">* Seleccioná una promoción</p>
+    </div>
+    <div>
+      <label class="block text-gray-700">Fecha</label>
+      <input id="date" type="date" class="mt-1 block w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-[#6635AA]" />
+      <p id="error-date" class="text-red-500 text-sm hidden">* Seleccioná una fecha</p>
+    </div>
+    <button type="submit" class="w-full py-2 rounded font-bold text-white transition duration-200"
+      style="background-color: #6635AA;" 
+      onmouseover="this.style.backgroundColor='#4B2482';"
+      onmouseout="this.style.backgroundColor='#6635AA';">
+      Comprar
+    </button>
+  </form>
+</section>
+
+<!-- Pantalla 3: Gracias -->
+<section id="thankyou-section" class="hidden flex flex-col justify-center items-center py-24 bg-[#fff5dd] text-center">
+  <div class="bg-white shadow-lg rounded-lg p-8 max-w-md">
+    <h2 class="text-3xl titulo" style="color: #6635AA;">¡Gracias por tu compra!</h2>
+    <p class="text-gray-700">Estamos procesando tus entradas.</p>
+    <p class="text-xs text-gray-500 mt-4">Serás redirigido al inicio en 5 segundos...</p>
+  </div>
+</section>
 
   <wonkas-footer></wonkas-footer>
 
   <script type="module" src="js/wonkas-app.js"></script>
+  <script type="module" src="js/entradas.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </body>
 </html>
