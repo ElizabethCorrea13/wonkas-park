@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Home – Wonka's Park</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="components/footer.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -27,7 +28,7 @@
       <nav id="mobile-menu" class="w-full md:w-auto md:flex hidden bg-[#F6ECD4] md:bg-transparent absolute md:relative top-16 left-0 md:top-0 z-50 py-2 md:py-0 px-4 md:px-0 shadow-md md:shadow-none">
         <div class="container mx-auto flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-6 text-purple-700 font-medium">
           <a href="index.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center titulo">Home</a>
-          <a href="atracciones.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center titulo ">Atracciones</a>
+          <a href="atracciones.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center titulo">Atracciones</a>
           <a href="visitanos.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center titulo">Visitanos</a>
           <a href="contacto.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center titulo">Contacto</a>
           <a href="entradas.html" class="bg-[#FFA101] text-white px-4 py-2 rounded-lg hover:bg-orange-200 transition duration-200 my-2 md:my-0 text-center flex items-center" style="font-family: 'Lilita One', cursive; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">🎫 ENTRADAS</a>
@@ -36,53 +37,41 @@
     </div>
   </header>
 
- <!-- HERO: imagen de fondo -->
-<section class="relative h-[500px] bg-cover bg-center">
+  <!-- HERO: imagen de fondo -->
+  <section class="relative h-[500px] bg-cover bg-center">
     <img src="img/hero.JPG" alt="Fondo Wonka" class="w-full h-auto object-cover object-top" />
+    <div class="absolute top-10 left-1/2 transform -translate-x-1/2 z-10">
+      <img src="img/logo.jpg.png" alt="Logo Wonka" class="w-40 sm:w-52 md:w-60 mx-auto drop-shadow-xl" />
+    </div>
+  </section>
 
-  <!-- Logo centrado -->
-  <div class="absolute top-10 left-1/2 transform -translate-x-1/2 z-10">
-    <img src="img/logo.jpg.png" alt="Logo Wonka" class="w-40 sm:w-52 md:w-60 mx-auto drop-shadow-xl" />
-  </div>
-</section>
-
-
-
-<!--Secccion cards-->
-<section class="relative z-10 -mt-[250px] flex flex-wrap justify-center gap-6 px-4 #fff5dd] px-5 py-12 titulo ">
-    <!-- Card -->
-<a href="atracciones.html#zona1" class="flex flex-col justify-center items-center gap-[29px] w-[278px] py-[30px] self-stretch bg-[#fff5dd] shadow-[0_6px_14px_rgba(0,0,0,0.3)] rounded-[24px] hover:shadow-xl transition">
-  <h3 class="text-[28px] sm:text-[32px] text-[#442178] text-center leading-none titulo">Atracciones</h3>
-  <img src="img/card-atracciones.png" alt="Atracciones" class="w-[264px] h-[264px] object-cover" />
-</a>
-    <!-- Card -->
-    <a href="visitanos.html" class="flex flex-col justify-center items-center gap-[29px] w-[278px] py-[30px] self-stretch bg-[#fff5dd] shadow-[0_6px_14px_rgba(0,0,0,0.3)] rounded-[24px] hover:shadow-xl transition">
+  <!-- Sección Cards -->
+  <section class="relative z-10 -mt-[250px] flex flex-wrap justify-center gap-6 px-4 py-12 bg-[#fff5dd] titulo">
+    <a href="atracciones.html#zona1" class="flex flex-col justify-center items-center gap-[29px] w-[278px] py-[30px] bg-[#fff5dd] shadow-[0_6px_14px_rgba(0,0,0,0.3)] rounded-[24px] hover:shadow-xl transition">
+      <h3 class="text-[28px] sm:text-[32px] text-[#442178] text-center leading-none titulo">Atracciones</h3>
+      <img src="img/card-atracciones.png" alt="Atracciones" class="w-[264px] h-[264px] object-cover" />
+    </a>
+    <a href="visitanos.html" class="flex flex-col justify-center items-center gap-[29px] w-[278px] py-[30px] bg-[#fff5dd] shadow-[0_6px_14px_rgba(0,0,0,0.3)] rounded-[24px] hover:shadow-xl transition">
       <h3 class="text-[28px] sm:text-[32px] text-[#442178] text-center leading-none titulo">Visítanos</h3>
       <img src="img/card-ubicacion.png" alt="Visítanos" class="w-[264px] h-[264px] object-cover" />
     </a>
-
-    <!-- Card -->
-    <a href="contacto.html" class="flex flex-col justify-center items-center gap-[29px] w-[278px] py-[30px] self-stretch bg-[#fff5dd] shadow-[0_6px_14px_rgba(0,0,0,0.3)] rounded-[24px] hover:shadow-xl transition">
+    <a href="contacto.html" class="flex flex-col justify-center items-center gap-[29px] w-[278px] py-[30px] bg-[#fff5dd] shadow-[0_6px_14px_rgba(0,0,0,0.3)] rounded-[24px] hover:shadow-xl transition">
       <h3 class="text-[28px] sm:text-[32px] text-[#442178] text-center leading-none titulo">Contacto</h3>
       <img src="img/card-contacto.png" alt="Contacto" class="w-[264px] h-[264px] object-cover" />
     </a>
+  </section>
 
-  </div>
-</section>
-
-
-
-<!-- CONTENIDO -->
+  <!-- CONTENIDO -->
   <main class="py-20 px-6 text-center bg-[#F6ECD4]">
-<h2 class="text-3xl sm:text-4xl titulo text-purple-800 mb-4">El Parque</h2>
-<p class="text-lg font-semibold text-gray-800">Bienvenidos a Wonka’s Park, un universo donde la imaginación cobra vida y el chocolate es el protagonista de cada aventura.</p>
+    <h2 class="text-3xl sm:text-4xl titulo text-purple-800 mb-4">El Parque</h2>
+    <p class="text-lg font-semibold text-gray-800">Bienvenidos a Wonka’s Park, un universo donde la imaginación cobra vida y el chocolate es el protagonista de cada aventura.</p>
     <p class="text-lg text-gray-700 text-justify max-w-3xl mx-auto mb-10">
       Inspirado en la imaginación de Willy Wonka, nuestro parque ofrece un universo encantador con atracciones únicas, espectáculos diarios y experiencias gastronómicas temáticas. Desde montañas rusas deslumbrantes hasta áreas interactivas para los más pequeños, hay algo para todos. Además, priorizamos la accesibilidad y la inclusión, asegurando que cada visitante pueda disfrutar de su día sin límites. ¡Viví la magia con nosotros!
     </p>
 
     <h3 class="text-3xl sm:text-4xl titulo text-purple-800 mb-4">Nuestra Misión</h3>
     <p class="text-lg text-gray-700 text-justify max-w-3xl mx-auto mb-10">
-      Crear momentos inolvidables para familias, jovenes y soñadores de todas las edades, ofreciendo una experiencia mágica que combina diversión, creatividad y dulzura. Nos proponemos despertar la fantasía en cada rincón del parque, inspirando sonrisas y compartiendo la alegría del chocolate artesanal en un entorno seguro, inclusivo y pensado para todos.
+      Crear momentos inolvidables para familias, jóvenes y soñadores de todas las edades, ofreciendo una experiencia mágica que combina diversión, creatividad y dulzura. Nos proponemos despertar la fantasía en cada rincón del parque, inspirando sonrisas y compartiendo la alegría del chocolate artesanal en un entorno seguro, inclusivo y pensado para todos.
     </p>
 
     <h3 class="text-3xl sm:text-4xl titulo text-purple-800 mb-4">Nuestra Visión</h3>
@@ -92,65 +81,19 @@
 
     <h2 class="text-3xl sm:text-4xl titulo text-purple-800 mb-4">¡Comenzá tu aventura!</h2>
     <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-10">
-      El parque está lleno de secretos, caminos mágicos y rincones por descubrir. 
-  <div class="mt-6 flex justify-center">
-  <a href="atracciones.html" class="bg-[#722EA5] text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition duration-200 text-lg titulo shadow-[0_2px_4px_rgba(0,0,0,0.4)]" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
-    🗺️ Ver Mapa Interactivo
-  </a>
-</div>
-  
+      El parque está lleno de secretos, caminos mágicos y rincones por descubrir.
+    </p>
+    <div class="mt-6 flex justify-center">
+      <a href="atracciones.html" class="bg-[#722EA5] text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition duration-200 text-lg titulo shadow-[0_2px_4px_rgba(0,0,0,0.4)]" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+        🗺️ Ver Mapa Interactivo
+      </a>
+    </div>
   </main>
 
-  <footer class="bg-purple-800 text-white px-4 py-6 sm:px-6 sm:py-8">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-      <div class="flex justify-center md:hidden">
-        <img src="img/uade.png" alt="Logo Uade" class="w-28 drop-shadow-md"/>
-      </div>
-      <div class="hidden md:flex flex-col items-center md:items-start">
-        <h3 class="text-base font-bold mb-2">Lugares de Chocolate</h3>
-        <ul class="space-y-0.5 text-xs sm:text-sm">
-          <li>Hershey's World</li>
-          <li>Lindt Chocolates</li>
-          <li>Milka Village</li>
-          <li>Museo del Cacao</li>
-          <li>Fábrica Mágica de Wonka</li>
-        </ul>
-      </div>
-      
-      <div class="text-center md:text-left">
-        <h3 class="text-base font-bold mb-2">Contacto</h3>
-        <ul class="space-y-1 text-xs sm:text-sm">
-          <li class="flex items-center justify-center md:justify-start">
-            <span class="mr-1">📍</span> Av. Dulce de Leche 123
-          </li>
-          <li class="flex items-center justify-center md:justify-start">
-            <span class="mr-1">📞</span> +54 11 1234-5678
-          </li>
-          <li class="flex items-center justify-center md:justify-start">
-            <span class="mr-1">✉️</span> contacto@wonkaspark.com
-          </li>
-        </ul>
-      </div>
-      <div class="md:col-span-2 lg:col-span-1">
-        <h3 class="text-base font-bold mb-2 text-center md:text-left">¿Dónde estamos?</h3>
-        <div class="overflow-hidden rounded-lg shadow-lg h-32 sm:h-40">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.673011089903!2d-58.4325749!3d-34.6156541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb7f3a8dbb47%3A0xf38b4e28d7b405c0!2sParque%20Centenario!5e0!3m2!1ses!2sar!4v1682973962536!5m2!1ses!2sar" 
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen 
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-      </div>
-    </div>
-    <div class="text-center text-[0.7rem] xs:text-xs text-purple-200 mt-4 pt-3 border-t border-purple-700">
-      © 2025 Wonka's Park. Todos los derechos reservados.
-    </div>
-  </footer>
+  <!-- Footer como componente -->
+  <wonkas-footer></wonkas-footer>
 
+  <!-- Script del menú -->
   <script>
     const btn = document.getElementById('menu-btn');
     const menu = document.getElementById('mobile-menu');
