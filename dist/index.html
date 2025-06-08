@@ -16,8 +16,7 @@
   </style>
 </head>
 <body class="bg-white text-gray-800">
-  <!-- HEADER -->
-  <header class="bg-[#fff5dd] border-b border-[#f0e5cd]">
+  <header class="bg-[#F6ECD4] border-b border-[#F6ECD4]">
     <div class="container mx-auto flex flex-wrap items-center justify-between px-4 py-3 md:px-6 md:py-2">
       <a href="index.html" class="flex items-center">
         <h1 class="titulo text-purple-800 text-2xl cursor-pointer">WONKA'S PARK</h1>
@@ -25,72 +24,99 @@
       <button id="menu-btn" class="md:hidden text-purple-800 text-3xl focus:outline-none">
         <span id="menu-icon">☰</span>
       </button>
-      <nav id="mobile-menu" class="w-full md:w-auto md:flex hidden bg-[#fff5dd] md:bg-transparent absolute md:relative top-16 left-0 md:top-0 z-50 py-2 md:py-0 px-4 md:px-0 shadow-md md:shadow-none">
+      <nav id="mobile-menu" class="w-full md:w-auto md:flex hidden bg-[#F6ECD4] md:bg-transparent absolute md:relative top-16 left-0 md:top-0 z-50 py-2 md:py-0 px-4 md:px-0 shadow-md md:shadow-none">
         <div class="container mx-auto flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-6 text-purple-700 font-medium">
-          <a href="index.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center">Home</a>
-          <a href="parque.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center">Parque</a>
-          <a href="atracciones.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center">Atracciones</a>
-          <a href="horarios.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center">Horarios</a>
-          <a href="ubicacion.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center">Ubicación</a>
-          <a href="servicios.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center">Servicios</a>
-          <a href="accesibilidad.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center">Accesibilidad</a>
-          <a href="contacto.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center">Contacto</a>
-          <a href="entradas.html" class="bg-yellow-400 text-white px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition duration-200 my-2 md:my-0 text-center flex items-center">🎫 ENTRADAS</a>
+          <a href="index.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center titulo">Home</a>
+          <a href="atracciones.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center titulo ">Atracciones</a>
+          <a href="horarios.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center titulo">Visitanos</a>
+          <a href="contacto.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center titulo">Contacto</a>
+          <a href="entradas.html" class="bg-[#FFA101] text-white px-4 py-2 rounded-lg hover:bg-orange-200 transition duration-200 my-2 md:my-0 text-center flex items-center" style="font-family: 'Lilita One', cursive; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">🎫 ENTRADAS</a>
         </div>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="relative w-full max-h-[720px] overflow-hidden">
+ <!-- HERO: imagen de fondo -->
+<section class="relative h-[500px] bg-cover bg-center">
     <img src="img/hero.JPG" alt="Fondo Wonka" class="w-full h-auto object-cover object-top" />
-    <div class="absolute inset-0 flex items-start justify-center pt-12 sm:pt-20">
-      <img src="img/logo.jpg.png" alt="Logo Wonka" class="w-40 sm:w-52 md:w-60 drop-shadow-xl" />
-    </div>
-  </section>
 
-  <!-- CONTENIDO PRINCIPAL -->
-  <main class="py-20 px-6 text-center bg-[#fff5dd]">
-    <h2 class="text-3xl titulo text-purple-800 mb-6">Sobre el Parque</h2>
-    <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-6">
-      Wonka's Park es un parque temático mágico e inclusivo ubicado en una zona turística privilegiada. Ideal para familias y jóvenes, nuestro objetivo es brindar diversión, emoción y momentos inolvidables.
-    </p>
-    <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-10">
+  <!-- Logo centrado -->
+  <div class="absolute top-10 left-1/2 transform -translate-x-1/2 z-10">
+    <img src="img/logo.jpg.png" alt="Logo Wonka" class="w-40 sm:w-52 md:w-60 mx-auto drop-shadow-xl" />
+  </div>
+</section>
+
+
+
+<!--Secccion cards-->
+<section class="relative z-10 -mt-[250px] flex flex-wrap justify-center gap-6 px-4 #fff5dd] px-5 py-12 titulo ">
+    <!-- Card -->
+<a href="atracciones.html#zona1" class="flex flex-col justify-center items-center gap-[29px] w-[278px] py-[30px] self-stretch bg-[#fff5dd] shadow-[0_6px_14px_rgba(0,0,0,0.3)] rounded-[24px] hover:shadow-xl transition">
+  <h3 class="text-[28px] sm:text-[32px] text-[#442178] text-center leading-none titulo">Atracciones</h3>
+  <img src="img/card-atracciones.png" alt="Atracciones" class="w-[264px] h-[264px] object-cover" />
+</a>
+    <!-- Card -->
+    <a href="visitanos.html" class="flex flex-col justify-center items-center gap-[29px] w-[278px] py-[30px] self-stretch bg-[#fff5dd] shadow-[0_6px_14px_rgba(0,0,0,0.3)] rounded-[24px] hover:shadow-xl transition">
+      <h3 class="text-[28px] sm:text-[32px] text-[#442178] text-center leading-none titulo">Visítanos</h3>
+      <img src="img/card-ubicacion.png" alt="Visítanos" class="w-[264px] h-[264px] object-cover" />
+    </a>
+
+    <!-- Card -->
+    <a href="contacto.html" class="flex flex-col justify-center items-center gap-[29px] w-[278px] py-[30px] self-stretch bg-[#fff5dd] shadow-[0_6px_14px_rgba(0,0,0,0.3)] rounded-[24px] hover:shadow-xl transition">
+      <h3 class="text-[28px] sm:text-[32px] text-[#442178] text-center leading-none titulo">Contacto</h3>
+      <img src="img/card-contacto.png" alt="Contacto" class="w-[264px] h-[264px] object-cover" />
+    </a>
+
+  </div>
+</section>
+
+
+
+<!-- CONTENIDO -->
+  <main class="py-20 px-6 text-center bg-[#F6ECD4]">
+<h2 class="text-3xl sm:text-4xl titulo text-purple-800 mb-4">El Parque</h2>
+<p class="text-lg font-semibold text-gray-800">Bienvenidos a Wonka’s Park, un universo donde la imaginación cobra vida y el chocolate es el protagonista de cada aventura.</p>
+    <p class="text-lg text-gray-700 text-justify max-w-3xl mx-auto mb-10">
       Inspirado en la imaginación de Willy Wonka, nuestro parque ofrece un universo encantador con atracciones únicas, espectáculos diarios y experiencias gastronómicas temáticas. Desde montañas rusas deslumbrantes hasta áreas interactivas para los más pequeños, hay algo para todos. Además, priorizamos la accesibilidad y la inclusión, asegurando que cada visitante pueda disfrutar de su día sin límites. ¡Viví la magia con nosotros!
     </p>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-      <img src="img/familia1.jpg" alt="Diversión en familia" class="rounded-lg shadow-md">
-      <img src="img/atraccion1.jpg" alt="Atracción mágica" class="rounded-lg shadow-md">
-      <img src="img/niños1.jpg" alt="Juegos para niños" class="rounded-lg shadow-md">
-    </div>
+
+    <h3 class="text-3xl sm:text-4xl titulo text-purple-800 mb-4">Nuestra Misión</h3>
+    <p class="text-lg text-gray-700 text-justify max-w-3xl mx-auto mb-10">
+      Crear momentos inolvidables para familias, jovenes y soñadores de todas las edades, ofreciendo una experiencia mágica que combina diversión, creatividad y dulzura. Nos proponemos despertar la fantasía en cada rincón del parque, inspirando sonrisas y compartiendo la alegría del chocolate artesanal en un entorno seguro, inclusivo y pensado para todos.
+    </p>
+
+    <h3 class="text-3xl sm:text-4xl titulo text-purple-800 mb-4">Nuestra Visión</h3>
+    <p class="text-lg text-gray-700 text-justify max-w-3xl mx-auto mb-10">
+      Ser el parque temático más encantador y original de la región, un lugar de referencia donde los visitantes encuentren no solo entretenimiento, sino un viaje a un mundo fantástico donde los sueños y el chocolate se funden. Aspiramos a crecer como un espacio de innovación, inclusión y valores familiares, conectando generaciones a través de la magia y la emoción.
+    </p>
+
+    <h2 class="text-3xl sm:text-4xl titulo text-purple-800 mb-4">¡Comenzá tu aventura!</h2>
+    <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-10">
+      El parque está lleno de secretos, caminos mágicos y rincones por descubrir. 
+  <div class="mt-6 flex justify-center">
+  <a href="atracciones.html" class="bg-[#722EA5] text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition duration-200 text-lg titulo shadow-[0_2px_4px_rgba(0,0,0,0.4)]" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+    🗺️ Ver Mapa Interactivo
+  </a>
+</div>
+  
   </main>
 
-  <!-- FOOTER -->
   <footer class="bg-purple-800 text-white px-4 py-6 sm:px-6 sm:py-8">
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
       <div class="flex justify-center md:hidden">
         <img src="img/uade.png" alt="Logo Uade" class="w-28 drop-shadow-md"/>
       </div>
       <div class="hidden md:flex flex-col items-center md:items-start">
-        <img src="img/uade.png" alt="Logo Uade" class="w-32 lg:w-36 drop-shadow-md mb-2"/>
-        <p class="text-xs text-purple-200 mt-1">
-          Trabajo grupal <br>
-          Materia Diseño y Desarrollo Web<br>
-          Curso: 16872 · Grupo: 1
-        </p>
-      </div>
-      <div class="text-center md:text-left">
-        <h3 class="text-base font-bold mb-2">Integrantes</h3>
+        <h3 class="text-base font-bold mb-2">Lugares de Chocolate</h3>
         <ul class="space-y-0.5 text-xs sm:text-sm">
-          <li>👨 Pablo Pelardas</li>
-          <li>👩 Elizabeth Correa</li>
-          <li>👨 Agustín Bergomi</li>
-          <li>👩 Analia Fascie</li>
+          <li>Hershey's World</li>
+          <li>Lindt Chocolates</li>
+          <li>Milka Village</li>
+          <li>Museo del Cacao</li>
+          <li>Fábrica Mágica de Wonka</li>
         </ul>
-        <a href="https://elizabethcorrea13.github.io/tpGrupal/index.html" target="_blank" class="inline-block mt-2 text-yellow-300 underline hover:text-yellow-200 transition text-xs sm:text-sm">
-          🌐 Sitio Grupal
-        </a>
       </div>
+      
       <div class="text-center md:text-left">
         <h3 class="text-base font-bold mb-2">Contacto</h3>
         <ul class="space-y-1 text-xs sm:text-sm">
@@ -106,7 +132,7 @@
         </ul>
       </div>
       <div class="md:col-span-2 lg:col-span-1">
-        <h3 class="text-base font-bold mb-2 text-center md:text-left">Ubicación</h3>
+        <h3 class="text-base font-bold mb-2 text-center md:text-left">¿Dónde estamos?</h3>
         <div class="overflow-hidden rounded-lg shadow-lg h-32 sm:h-40">
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.673011089903!2d-58.4325749!3d-34.6156541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb7f3a8dbb47%3A0xf38b4e28d7b405c0!2sParque%20Centenario!5e0!3m2!1ses!2sar!4v1682973962536!5m2!1ses!2sar" 
@@ -121,7 +147,7 @@
       </div>
     </div>
     <div class="text-center text-[0.7rem] xs:text-xs text-purple-200 mt-4 pt-3 border-t border-purple-700">
-      &copy; 2025 Wonka's Park. Todos los derechos reservados.
+      © 2025 Wonka's Park. Todos los derechos reservados.
     </div>
   </footer>
 
