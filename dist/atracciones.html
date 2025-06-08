@@ -1,132 +1,211 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Atracciones – Wonka's Park</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atracciones – Wonka's Park</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+      html {
+    scroll-behavior: smooth;
+  }
     body {
       font-family: 'Montserrat', sans-serif;
     }
     .titulo {
       font-family: 'Lilita One', cursive;
     }
+
   </style>
 </head>
 <body class="bg-white text-gray-800">
-<!-- HEADER -->
-<header class="bg-[#fff5dd] border-b border-[#f0e5cd]">
+  <header class="bg-[#fdf3e7] border-b border-[#fdf3e7]">
     <div class="container mx-auto flex flex-wrap items-center justify-between px-4 py-3 md:px-6 md:py-2">
-        <a href="index.html" class="flex items-center">
-            <h1 class="titulo text-purple-800 text-2xl cursor-pointer">WONKA'S PARK</h1>
-        </a>
-        <button id="menu-btn" class="md:hidden text-purple-800 text-3xl focus:outline-none">
-            <span id="menu-icon">☰</span>
-        </button>
-        <nav id="mobile-menu" class="w-full md:w-auto md:flex hidden bg-[#fff5dd] md:bg-transparent absolute md:relative top-16 left-0 md:top-0 z-50 py-2 md:py-0 px-4 md:px-0 shadow-md md:shadow-none">
-            <div class="container mx-auto flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-6 text-purple-700 font-medium">
-                <a href="index.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center">Home</a>
-                <a href="parque.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center">Parque</a>
-                <a href="atracciones.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center">Atracciones</a>
-                <a href="horarios.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center">Horarios</a>
-                <a href="ubicacion.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center">Ubicación</a>
-                <a href="servicios.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center">Servicios</a>
-                <a href="accesibilidad.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center">Accesibilidad</a>
-                <a href="contacto.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center">Contacto</a>
-                <a href="entradas.html" class="bg-yellow-400 text-white px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition duration-200 my-2 md:my-0 text-center flex items-center">🎫 ENTRADAS</a>
-              </div>
-        </nav>
+      <a href="index.html" class="flex items-center">
+        <h1 class="titulo text-purple-800 text-2xl cursor-pointer">WONKA'S PARK</h1>
+      </a>
+      <button id="menu-btn" class="md:hidden text-purple-800 text-3xl focus:outline-none">
+        <span id="menu-icon">☰</span>
+      </button>
+      <nav id="mobile-menu" class="w-full md:w-auto md:flex hidden bg-[#F6ECD4] md:bg-transparent absolute md:relative top-16 left-0 md:top-0 z-50 py-2 md:py-0 px-4 md:px-0 shadow-md md:shadow-none">
+        <div class="container mx-auto flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-6 text-purple-700 font-medium">
+          <a href="index.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center titulo">Home</a>
+          <a href="atracciones.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center titulo ">Atracciones</a>
+          <a href="horarios.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center titulo">Visitanos</a>
+          <a href="contacto.html" class="py-2 md:py-0 text-purple-800 hover:underline hover:text-purple-900 flex items-center titulo">Contacto</a>
+          <a href="entradas.html" class="bg-[#FFA101] text-white px-4 py-2 rounded-lg hover:bg-orange-200 transition duration-200 my-2 md:my-0 text-center flex items-center" style="font-family: 'Lilita One', cursive; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">🎫 ENTRADAS</a>
+        </div>
+      </nav>
     </div>
-</header>
+  </header>
+  
+<!-- HERO CON FONDO ADAPTATIVO -->
+<section class="relative w-full h-[60vh] min-h-[400px] sm:h-[70vh] md:h-[80vh] overflow-hidden">
+  <img src="img/fondo_v1.png" alt="Fondo Wonka" 
+       class="absolute inset-0 w-full h-full object-cover object-center z-0" />
+  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
+    <h1 class="titulo text-3xl sm:text-4xl md:text-5xl text-white drop-shadow-[0_3px_6px_rgba(0,0,0,0.7)] px-4">
+      Mapa Interactivo
+    </h1>
+  </div>
+</section>
 
-<!-- CONTENIDO: Atracciones -->
-<main class="py-20 px-6 text-center bg-white">
-    <h2 class="text-3xl titulo text-purple-800 mb-10">Atracciones</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        <!-- Atracción 1 -->
-        <div class="bg-[#fdf3e7] p-6 rounded-lg shadow-lg">
-            <img src="img/montana.jpg" class="rounded-md mb-4 w-full h-48 object-cover" alt="Montaña Rusa" />
-            <h3 class="text-xl font-bold text-purple-700 mb-2">🎢 Montaña Rusa de Chocolate</h3>
-            <p>Una experiencia veloz, llena de curvas, bajadas y aroma a cacao. Ideal para aventureros.</p>
-        </div>
-        <!-- Atracción 2 -->
-        <div class="bg-[#fdf3e7] p-6 rounded-lg shadow-lg">
-            <img src="img/teatro.jpg" class="rounded-md mb-4 w-full h-48 object-cover" alt="Teatro de fantasía" />
-            <h3 class="text-xl font-bold text-purple-700 mb-2">🎭 Teatro de Fantasía</h3>
-            <p>Shows mágicos en vivo todos los días con personajes encantados, luces y efectos especiales.</p>
-        </div>
-        <!-- Atracción 3 -->
-        <div class="bg-[#fdf3e7] p-6 rounded-lg shadow-lg">
-            <img src="img/acuatico.jpg" class="rounded-md mb-4 w-full h-48 object-cover" alt="Zona acuática" />
-            <h3 class="text-xl font-bold text-purple-700 mb-2">💦 Zona Acuática</h3>
-            <p>Toboganes, fuentes y juegos de agua para todas las edades. ¡No olvides el traje de baño!</p>
-        </div>
+<!-- MAPA INTERACTIVO CON BOTONES -->
+<section class="relative bg-[#fdf3e7] text-white overflow-hidden pb-[80px] pt-[0px]">
+
+  <!-- Curva superior (ajustada con margen negativo) -->
+  <div class="absolute -top-[1px] left-0 w-full overflow-hidden h-[80px]">
+    <svg class="w-full h-full" viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,0 C480,80 960,0 1440,80 L1440,0 L0,0 Z" fill="#fdf3e7" />
+    </svg>
+  </div>
+
+  <!-- Imagen con botones -->
+    <div class="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8">
+    <img src="img/mapa_interactivo.png" alt="Mapa Interactivo" class="w-full h-auto" style="background-color: transparent;" />
+
+
+    <!-- Botones de ancla -->
+    <a href="#zona1" class="absolute top-[22%] left-[25%] w-9 h-9 bg-orange-500 focus:bg-[#f6c143] text-white rounded-full flex items-center justify-center text-lg shadow-lg hover:scale-110 transition">+</a>
+    <a href="#zona2" class="absolute top-[34%] left-[55%] w-9 h-9 bg-orange-500 focus:bg-[#f6c143] text-white rounded-full flex items-center justify-center text-lg shadow-lg hover:scale-110 transition">+</a>
+    <a href="#zona3" class="absolute top-[47%] left-[38%] w-9 h-9 bg-orange-500 focus:bg-[#f6c143] text-white rounded-full flex items-center justify-center text-lg shadow-lg hover:scale-110 transition">+</a>
+    <a href="#zona4" class="absolute top-[62%] left-[52%] w-9 h-9 bg-orange-500 focus:bg-[#f6c143] text-white rounded-full flex items-center justify-center text-lg shadow-lg hover:scale-110 transition">+</a>
+  </div>
+
+  <!-- Curva inferior -->
+<div class="relative w-full overflow-hidden h-[80px]">
+  <svg class="absolute bottom-0 left-0 w-full h-full" viewBox="0 0 1440 80" preserveAspectRatio="none">
+    <path d="M0,0 C480,80 960,0 1440,80 L1440,0 L0,0 Z" fill="#fdf3e7" />
+  </svg>
+</div>
+<!-- HERO CON FONDO ADAPTATIVO -->
+<section class="relative w-full h-[60vh] min-h-[400px] sm:h-[70vh] md:h-[80vh] overflow-hidden">
+  <img src="img/fondo_v1.png" alt="Fondo Wonka" 
+       class="absolute inset-0 w-full h-full object-cover object-center z-0" />
+  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
+    <h1 class="titulo text-3xl sm:text-4xl md:text-5xl text-white drop-shadow-[0_3px_6px_rgba(0,0,0,0.7)] px-4">
+ Atracciones
+    </h1>
+  </div>
+</section>
+
+
+<!-- SECCIONES DESTINO -->
+<main class="text-center bg-white">
+
+  <!-- Zona 1 -->
+<section id="zona1" class="pt-14 pb-8 px-6 bg-[#fdf3e7]">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6 bg-white p-6 rounded-lg shadow-md">
+      <img src="img/rio-chocolate.png" alt="Montaña de Chocolate" class="w-full md:w-1/2 h-[300px] object-cover rounded-lg shadow-md" />
+      <div class="md:w-1/2 text-left space-y-4">
+        <h2 class="titulo text-2xl sm:text-3xl text-purple-800">Río de Chocolate Encantado</h2>
+        <h3 class="titulo text-lg sm:text-xl text-purple-800">Una experiencia vertiginosa.</h3>
+        <p class="font-semibold text-purple-800 bg-yellow-100 px-4 py-1 inline-block rounded-lg">
+          Embarcate en un paseo de fantasía a bordo de un bote por un río de chocolate, entre túneles mágicos, árboles de caramelo y luces brillantes. 
+          Un recorrido lleno de sorpresas para disfrutar en familia, entre amigos o con quien quieras soñar.
+        </p>
+      </div>
     </div>
+  </section>
+
+  <!-- Zona 2 -->
+<section id="zona2" class="py-8 px-6 bg-[#fdf3e7]">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6 bg-white p-6 rounded-lg shadow-md">
+      <img src="img/fabrica-maginca.png" alt="Fabrica Mágica" class="w-full md:w-1/2 h-[300px] object-cover rounded-lg shadow-md" />
+      <div class="md:w-1/2 text-left space-y-4">
+        <h2 class="titulo text-2xl sm:text-3xl text-purple-800">Fábrica Mágica de Dulces</h2>
+        <h3 class="titulo text-lg sm:text-xl text-purple-800">El hogar donde nacen los sueños de azúcar.</h3>
+        <p class="font-semibold text-purple-800 bg-yellow-100 px-4 py-1 inline-block rounded-lg">
+          Adentrate en una fábrica encantada donde caramelos, chocolates y dulces cobran vida. Explorá un universo de sabores, colores y magia en cada rincón, mientras descubrís los secretos de la dulzura más deliciosa.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zona 3 -->
+<section id="zona3" class="py-8 px-6 bg-[#fdf3e7]">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6 bg-white p-6 rounded-lg shadow-md">
+      <img src="img/maestro-chocolatero.png" alt="El Maestro Chocolatero" class="w-full md:w-1/2 h-[300px] object-cover rounded-lg shadow-md" />
+      <div class="md:w-1/2 text-left space-y-4">
+        <h2 class="titulo text-2xl sm:text-3xl text-purple-800">El Maestro Chocolatero</h2>
+        <h3 class="titulo text-lg sm:text-xl text-purple-800">Un encuentro con el arte del chocolate.</h3>
+        <p class="font-semibold text-purple-800 bg-yellow-100 px-4 py-1 inline-block rounded-lg">
+          Conocé al talentoso Maestro Chocolatero mientras crea bombones y delicias artesanales frente a tus ojos. Descubrí recetas secretas, sabores únicos y llevate el recuerdo más dulce de tu visita.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zona 4 -->
+<section id="zona4" class="pt-8 pb-14 px-6 bg-[#fdf3e7]">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6 bg-white p-6 rounded-lg shadow-md">
+      <img src="img/mrusa-caramelos.png" alt="Montaña Rusa de Caramelos" class="w-full md:w-1/2 h-[300px] object-cover rounded-lg shadow-md" />
+      <div class="md:w-1/2 text-left space-y-4">
+        <h2 class="titulo text-2xl sm:text-3xl text-purple-800">Montaña Rusa de Caramelos</h2>
+        <h3 class="titulo text-lg sm:text-xl text-purple-800">Adrenalina entre montañas de dulce.</h3>
+        <p class="font-semibold text-purple-800 bg-yellow-100 px-4 py-1 inline-block rounded-lg">
+          Subite a una aventura vibrante en nuestra Montaña Rusa de Caramelos. Desafiá la gravedad mientras volás entre lollipops gigantes, ríos de chocolate y cascadas de caramelo fundido. Una experiencia intensa y colorida, perfecta para los amantes de la emoción y los dulces.
+        </p>
+      </div>
+    </div>
+  </section>
+
 </main>
 
-<!-- FOOTER -->
-<footer class="bg-purple-800 text-white px-4 py-6 sm:px-6 sm:py-8">
+
+
+ <footer class="bg-purple-800 text-white px-4 py-6 sm:px-6 sm:py-8">
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-        <div class="flex justify-center md:hidden">
-            <img src="img/uade.png" alt="Logo Uade" class="w-28 drop-shadow-md"/>
+      <div class="flex justify-center md:hidden">
+        <img src="img/uade.png" alt="Logo Uade" class="w-28 drop-shadow-md"/>
+      </div>
+      <div class="hidden md:flex flex-col items-center md:items-start">
+        <h3 class="text-base font-bold mb-2">Lugares de Chocolate</h3>
+        <ul class="space-y-0.5 text-xs sm:text-sm">
+          <li>Hershey's World</li>
+          <li>Lindt Chocolates</li>
+          <li>Milka Village</li>
+          <li>Museo del Cacao</li>
+          <li>Fábrica Mágica de Wonka</li>
+        </ul>
+      </div>
+      
+      <div class="text-center md:text-left">
+        <h3 class="text-base font-bold mb-2">Contacto</h3>
+        <ul class="space-y-1 text-xs sm:text-sm">
+          <li class="flex items-center justify-center md:justify-start">
+            <span class="mr-1">📍</span> Av. Dulce de Leche 123
+          </li>
+          <li class="flex items-center justify-center md:justify-start">
+            <span class="mr-1">📞</span> +54 11 1234-5678
+          </li>
+          <li class="flex items-center justify-center md:justify-start">
+            <span class="mr-1">✉️</span> contacto@wonkaspark.com
+          </li>
+        </ul>
+      </div>
+      <div class="md:col-span-2 lg:col-span-1">
+        <h3 class="text-base font-bold mb-2 text-center md:text-left">¿Dónde estamos?</h3>
+        <div class="overflow-hidden rounded-lg shadow-lg h-32 sm:h-40">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.673011089903!2d-58.4325749!3d-34.6156541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb7f3a8dbb47%3A0xf38b4e28d7b405c0!2sParque%20Centenario!5e0!3m2!1ses!2sar!4v1682973962536!5m2!1ses!2sar" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
-        <div class="hidden md:flex flex-col items-center md:items-start">
-            <img src="img/uade.png" alt="Logo Uade" class="w-32 lg:w-36 drop-shadow-md mb-2"/>
-            <p class="text-xs text-purple-200 mt-1">
-                Trabajo grupal <br>
-                Materia Diseño y Desarrollo Web<br>
-                Curso: 16872 · Grupo: 1
-            </p>
-        </div>
-        <div class="text-center md:text-left">
-            <h3 class="text-base font-bold mb-2">Integrantes</h3>
-            <ul class="space-y-0.5 text-xs sm:text-sm">
-                <li>👨 Pablo Pelardas</li>
-                <li>👩 Elizabeth Correa</li>
-                <li>👨 Agustín Bergomi</li>
-                <li>👩 Analia Fascie</li>
-            </ul>
-            <a href="https://elizabethcorrea13.github.io/tpGrupal/index.html" target="_blank" class="inline-block mt-2 text-yellow-300 underline hover:text-yellow-200 transition text-xs sm:text-sm">
-                🌐 Sitio Grupal
-            </a>
-        </div>
-        <div class="text-center md:text-left">
-            <h3 class="text-base font-bold mb-2">Contacto</h3>
-            <ul class="space-y-1 text-xs sm:text-sm">
-                <li class="flex items-center justify-center md:justify-start">
-                    <span class="mr-1">📍</span> Av. Dulce de Leche 123
-                </li>
-                <li class="flex items-center justify-center md:justify-start">
-                    <span class="mr-1">📞</span> +54 11 1234-5678
-                </li>
-                <li class="flex items-center justify-center md:justify-start">
-                    <span class="mr-1">✉️</span> contacto@wonkaspark.com
-                </li>
-            </ul>
-        </div>
-        <div class="md:col-span-2 lg:col-span-1">
-            <h3 class="text-base font-bold mb-2 text-center md:text-left">Ubicación</h3>
-            <div class="overflow-hidden rounded-lg shadow-lg h-32 sm:h-40">
-                <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.673011089903!2d-58.4325749!3d-34.6156541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb7f3a8dbb47%3A0xf38b4e28d7b405c0!2sParque%20Centenario!5e0!3m2!1ses!2sar!4v1682973962536!5m2!1ses!2sar"
-                        width="100%"
-                        height="100%"
-                        style="border:0;"
-                        allowfullscreen
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
+      </div>
     </div>
     <div class="text-center text-[0.7rem] xs:text-xs text-purple-200 mt-4 pt-3 border-t border-purple-700">
-        &copy; 2025 Wonka's Park. Todos los derechos reservados.
+      © 2025 Wonka's Park. Todos los derechos reservados.
     </div>
-</footer>
+  </footer>
 
-<script>
+  <script>
     const btn = document.getElementById('menu-btn');
     const menu = document.getElementById('mobile-menu');
     const icon = document.getElementById('menu-icon');
