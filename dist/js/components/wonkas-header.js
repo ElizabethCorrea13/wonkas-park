@@ -53,7 +53,7 @@ class WonkasHeader extends HTMLElement {
       <nav id="mobile-menu" class="transition-transform transform fixed top-0 right-0 w-64 h-full bg-[#fff5dd] flex flex-col items-start p-6 space-y-6 text-[#6635AA] font-bold text-lg translate-x-full md:hidden shadow-lg">
         <a href="index.html" class="nav-link hover:text-[#4B0082]">Home</a>
         <a href="atracciones.html" class="nav-link hover:text-[#4B0082]">Atracciones</a>
-        <a href="horarios.html" class="nav-link hover:text-[#4B0082]">Visitanos</a>
+        <a href="visitanos.html" class="nav-link hover:text-[#4B0082]">Visitanos</a>
         <a href="contacto.html" class="nav-link hover:text-[#4B0082]">Contacto</a>
         <a href="entradas.html" class="flex bg-[#FFA101] text-white px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition duration-200 items-center gap-2">
           <svg class="icon" viewBox="0 0 33 23" fill="none" xmlns="http://www.w3.org/2000/svg">
