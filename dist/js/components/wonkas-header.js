@@ -28,7 +28,7 @@ class WonkasHeader extends HTMLElement {
         <nav id="desktop-menu" class="hidden md:flex justify-center space-x-6 text-[#6635AA] font-bold text-lg">
           <a href="index.html" class="nav-link hover:text-[#4B0082]">Home</a>
           <a href="atracciones.html" class="nav-link hover:text-[#4B0082]">Atracciones</a>
-          <a href="horarios.html" class="nav-link hover:text-[#4B0082]">Visitanos</a>
+          <a href="visitanos.html" class="nav-link hover:text-[#4B0082]">Visitanos</a>
           <a href="contacto.html" class="nav-link hover:text-[#4B0082]">Contacto</a>
         </nav>
 

@@ -18,7 +18,7 @@
 
             <!-- Título -->
             <div class="relative flex justify-center items-center py-24 md:py-32">
-              <h1 class="text-white text-4xl md:text-5xl font-bold">${title}</h1>
+              <h1 class="text-white text-2xl sm:text-3xl md:text-5xl font-bold">${title}</h1>
             </div>
           </div>
 

@@ -2,8 +2,8 @@
     connectedCallback() {
       this.innerHTML = `
         <!-- SVG Wave Top -->
-        <div class="w-full">
-          <svg class="w-full mb-[-1px] h-24 sm:h-32" viewBox="0 0 1440 150" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="w-full bg-[#fff5dd]">
+          <svg class="w-full mb-[-1px] h-24 sm:h-32" viewBox="0 0 1440 150" preserveAspectRatio="none" fill="#4B2482" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
               <path d="M1440 0C1080 150 360 0 0 150H1440V0Z" fill="url(#gradient)"/>
             </g>

@@ -38,6 +38,9 @@
       </div>
       <textarea placeholder="Tu mensaje" class="w-full mt-4 p-3 border rounded" rows="5" required></textarea>
       <button type="submit" class="mt-4 bg-purple-700 text-white px-6 py-2 rounded hover:bg-purple-800 transition">Enviar mensaje</button>
+      <p id="mensajeExito" class="hidden text-green-700 bg-green-100 border border-green-400 rounded p-2 mt-3 font-medium transition-all duration-300">
+        ✅ ¡Gracias! Tu mensaje fue enviado correctamente.
+      </p>
     </form>
 
     <p class="text-sm text-gray-600 mt-4 max-w-xl mx-auto">
@@ -47,6 +50,29 @@
 
   <!-- FOOTER reutilizable -->
   <wonkas-footer></wonkas-footer>
+
+  <script>
+    const form = document.querySelector('form');
+    const mensaje = document.getElementById('mensajeExito');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Mostrar mensaje
+      mensaje.classList.remove('hidden');
+      mensaje.classList.add('block');
+
+      // Ocultar luego de 5 segundos (5000ms)
+      setTimeout(() => {
+        mensaje.classList.remove('block');
+        mensaje.classList.add('hidden');
+      }, 3000);
+
+      // Limpiar formulario
+      form.reset();
+    });
+  </script>
+
 
 </body>
 </html>
