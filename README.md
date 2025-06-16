@@ -72,7 +72,7 @@
 ## 🎥 Video Explicativo
 
 - [x] **Video de 3 minutos**
-  - Se presenta la necesidad, equipo, solución, navegación del sitio y eslogan.
+  - Se presenta la necesidad, equipo, solución, navegación del sitio y eslogan. https://youtu.be/aE5ymeP0BKo
 
 ## 📋 Roles del Equipo
 
