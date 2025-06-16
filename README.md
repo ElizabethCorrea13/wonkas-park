@@ -72,7 +72,7 @@
 ## 🎥 Video Explicativo
 
 - [x] **Video de 3 minutos**
-  - En desarrollo o pendiente de subir. Se presentará la necesidad, equipo, solución, navegación del sitio y eslogan.
+  - Se presenta la necesidad, equipo, solución, navegación del sitio y eslogan.
 
 ## 📋 Roles del Equipo
 
