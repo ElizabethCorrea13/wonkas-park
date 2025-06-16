@@ -44,6 +44,9 @@
               <a href="https://elizabethcorrea13.github.io/tpGrupal/index.html" target="_blank" class="block mt-2 text-yellow-300 underline hover:text-yellow-200 text-sm">
                 🌐 Sitio Grupal
               </a>
+              <a href="https://youtu.be/aE5ymeP0BKo" target="_blank" class="block mt-2 text-yellow-300 underline hover:text-yellow-200 text-sm">
+                🌐 Video Wonkas Park
+              </a>
             </div>
 
             <!-- Contacto -->
