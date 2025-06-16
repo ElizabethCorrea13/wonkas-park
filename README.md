@@ -17,6 +17,7 @@
 
 - [x] **Prototipo completo (escritorio y móvil)**
   - El sitio es completamente responsive con TailwindCSS.
+  - Se suma prototipo en figma https://www.figma.com/design/g2N1D2pdjUmBGKqW3yy2Oa/Sitio?node-id=0-1&m=dev
 
 - [x] **Público objetivo definido**
   - El diseño colorido, animaciones y enfoque familiar lo hacen ideal para un parque temático.
